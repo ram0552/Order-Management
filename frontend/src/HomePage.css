@@ -1,0 +1,81 @@
+/* Container for the entire homepage */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f0f4f8; /* light background for modern look */
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main Heading */
+.homepage-container h1{
+ color: #1a52c4;
+}
+.homepage-container h3 {
+  color: #e4e6ea; /* professional blue color */
+}
+
+/* Cards wrapper */
+.cards-container {
+  display: flex;
+  gap: 40px; /* space between cards */
+  justify-content: center;
+  flex-wrap: wrap; /* responsive wrapping */
+  margin-top: 20px;
+}
+
+/* Individual dashboard card */
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 200px;
+  background: linear-gradient(145deg, #1565c0, #1976d2); /* blue gradient */
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  text-align: center;
+}
+
+/* Hover effect for cards */
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(145deg, #1976d2, #1565c0);
+}
+
+/* Icon inside the card */
+.dashboard-card .material-icons {
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+
+/* Card title */
+.dashboard-card h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Optional: Responsive for small screens */
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dashboard-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .dashboard-card .material-icons {
+    font-size: 50px;
+  }
+}

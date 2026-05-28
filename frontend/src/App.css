@@ -1,0 +1,128 @@
+/* Card container for forms */
+.card-container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.card-container h2 {
+  font-weight: 600;
+  color: #1976d2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Floating label & focus effects (Material-UI) */
+.MuiInputLabel-shrink {
+  color: #1976d2;
+}
+.MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25,118,210,0.2);
+}
+
+/* Gradient buttons */
+button.gradient-primary {
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+button.gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25,118,210,0.3);
+}
+
+button.gradient-secondary {
+  background: linear-gradient(135deg, #ff8a65, #ff7043);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+button.gradient-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,112,67,0.3);
+}
+
+/* Table */
+.table-container {
+  max-width: 95%;
+  margin: 30px auto;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+}
+
+.order-table th,
+.order-table td {
+  border: none;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.order-table th {
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.order-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.order-table tr:hover {
+  background: #e3f2fd;
+  cursor: pointer;
+}
+
+/* Table action buttons */
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-edit {
+  background: #ffb74d;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #ffa726;
+}
+
+.btn-delete {
+  background: #e57373;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #ef5350;
+}
